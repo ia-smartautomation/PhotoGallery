@@ -2,15 +2,15 @@
 
 ![App-Screens](https://user-images.githubusercontent.com/13706140/80315717-0a7fe280-8817-11ea-9c0f-e3c27f89b3d7.png)
 
-Explore soul southing images and view its details using Image Explorer. Both List screen and Details screen support Portrait as well as Landscape orientation. The Images are fetched from API Endpoints hosted at `https://dev-test.dokku.mub.lu/`
+Explore soul soothing images and view its details using Image Explorer. Both List screen and Details screen support Portrait as well as Landscape orientation. The Images are fetched from API Endpoints hosted at `https://dev-test.dokku.mub.lu/`
 
 
 ## Project Setup
 > Clone the repo, open the project in Android Studio, hit "Run". Done!
 
 
-## Architechture Overview
-The application is written in Kotlin language with the latest official Android architechture pattern - **MVVM**.  
+## Architecture Overview
+The application is written in Kotlin language with the latest official Android architecture pattern - **MVVM**.  
 It showcases the usage of **ViewModels**, **DataBinding**, **Animations & Transitions**, **Repository Pattern for Data** and **Testing**.   
 The Project is separated into the following packages - 
 - **API**:  
@@ -32,6 +32,11 @@ All the helper methods and utility files go here.
 - **Glide**: Used to fetch and display Images.
 - **RoboElectric**: Used for Testing.
 - **Mockito**: Used for Testing.
+
+
+## API DATA Inconsistencies
+- **\n\n** being returned in one of the Image object's title. We have handled that using the Kotlin's trim function.
+- **Future Date** being returned returned for one of the Image object.
 
 
 ## Future Improvements
