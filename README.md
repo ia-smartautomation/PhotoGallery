@@ -35,8 +35,8 @@ All the helper methods and utility files go here.
 
 
 ## API DATA Inconsistencies
-- **\n\n** being returned in one of the Image object's title. We have handled that using the Kotlin's trim function.
-- **Future Date** being returned returned for one of the Image object.
+- **\n\n** is being returned in one of the Image object's `title` parameter in `GET/api/photo/{id}` API. We have handled that using the Kotlin's trim function.
+- **Future Date** is being returned in one of the Image object's `created` parameter in `GET/api/photo/{id}` API.
 
 
 ## Future Improvements
