@@ -11,7 +11,7 @@ Explore soul southing images and view its details using Image Explorer. Both Lis
 
 ## Architechture Overview
 The application is written in Kotlin language with the latest official Android architechture pattern - **MVVM**.  
-It showcases the usage of **ViewModels**, **DataBinding**, **Repository Pattern** and **Testing**.   
+It showcases the usage of **ViewModels**, **DataBinding**, **Animations & Transitions**, **Repository Pattern for Data** and **Testing**.   
 The Project is separated into the following packages - 
 - **API**:  
 This package contains the API Client, API Constants, API Model files and API Service Endpoints 
@@ -35,7 +35,6 @@ All the helper methods and utility files go here.
 
 
 ## Future Improvements
-The transition from grid item to detials view is currently set to shimmer layout imageview. This is done since the Image object in the Grid View is not directly transitioned to the details view. Rather a separate API call is made on the details view to fetch the details object. Due to this the return transition from details to list doesn't work when shimmer is hidden. The Details layout can be updated to make the transition more seamless from both grid view to details and vice versa.
 
 **Use of Kotlin Navigation Components** -
-App can be further migrated to use the latest released Android Navigation Components. This would also help in creating transition effects using the official Kotlin's Navigation Fragment Transiton library.
+App can be further migrated to use the latest released Android Navigation Components which prefers the use of single Activity and all Fragments. This would also help in creating transition effects using the official Kotlin's Navigation Fragment Transiton library.
