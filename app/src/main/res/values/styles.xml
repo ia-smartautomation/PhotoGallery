@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">true</item>
+
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background_splashscreen</item>
+    </style>
+
+    <style name="ToolbarGeneral">
+        <item name="contentInsetStart">16dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="layout_collapseMode">pin</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+    <style name="CollapsibleToolbarExpandedText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">36sp</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="CollapsibleToolbarCollapsedText" parent="@android:style/TextAppearance">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/light</item>
+        <item name="android:fontFamily">@font/bold</item>
+    </style>
+
+    <style name="CollapsibleToolbarStyle">
+        <item name="expandedTitleGravity">bottom|start</item>
+        <item name="expandedTitleMarginBottom">20dp</item>
+        <item name="expandedTitleMarginStart">16dp</item>
+        <item name="expandedTitleTextAppearance">@style/CollapsibleToolbarExpandedText</item>
+        <item name="collapsedTitleTextAppearance">@style/CollapsibleToolbarCollapsedText</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed</item>
+    </style>
+</resources>
